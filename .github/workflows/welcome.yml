@@ -1,0 +1,17 @@
+variable "rds_identifier" {
+  description = "Name for the RDS instance"
+  type        = string
+  default     = "gitlab-dev-data-storage"
+}
+
+variable "rds_engine" {
+  description = "Database type"
+  type        = string
+  default     = "postgres"
+}
+
+variable "rds_engine_version" {
+  description = "Postgres version number"
+  type        = string
+  default     = "12.14"
+}
